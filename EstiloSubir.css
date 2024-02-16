@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(228, 224, 224);
+    margin: 0; /* Asegúrate de quitar el margen predeterminado del cuerpo */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Ajustar altura al 100% del viewport */
+}
+.box {
+    position: relative;
+}
+.cuadroinsert {
+    background-color: whitesmoke;
+    position: absolute;
+    left: 50%; /* Centrar horizontalmente en relación con el padre */
+    top: 50%; /* Centrar verticalmente en relación con el padre */
+    transform: translate(-50%, -50%); /* Corregir centrado teniendo en cuenta el tamaño del elemento */
+    padding: 20px;
+    border-radius: 8px;
+}
+.Texto {
+    position: absolute;
+    left: 21%;
+    font-size: 110%;
+}
+.borde{
+    
+}

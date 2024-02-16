@@ -1,0 +1,209 @@
+body{
+    background-color: white;
+}
+.info{
+    background-color: whitesmoke;
+}
+
+.header{
+    background-color: antiquewhite;
+}
+.grid-container>*{
+    box-shadow: -1px 1px 7px 0px rgba(black, gray, blue);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    min-height: 200px;
+}
+.grid-container{
+    display: grid;
+    gap:10px;
+    grid-template-areas:
+    "header header" 
+    "info cmaforo";
+}
+.cmaforo{
+    display: grid;
+    gap:10px;
+    grid-template-areas:
+    "mover botons" ;
+}
+
+/*------------------------SEMAFORO---------------------------------------------------------------------------*/
+
+
+.semaforo{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    display: grid;
+    place-items: center;
+    background-color: #2c3e50;
+    padding: 10px;
+}
+.luces-circuloR{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position:relative;
+    background-color: rgb(0,0,0,0.3);
+    
+}
+.luces-circuloA{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(0,0,0,0.3);
+    position: relative;
+}
+.luces-circuloV{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(0,0,0,0.3);
+    position: relative;
+}
+.luces-circuloR::after{
+    content:'' ;
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    border-right: 4px solid rgb(255,255,255,0.6);
+    top: 5%;
+    left: 5%;
+}
+.luces-circuloA::after{
+    content:'' ;
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    border-right: 4px solid rgb(255,255,255,0.6);
+    top: 5%;
+    left: 5%;
+}
+.luces-circuloV::after{
+    content:'' ;
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    border-right: 4px solid rgb(255,255,255,0.6);
+    top: 5%;
+    left: 5%;
+}
+.stick{
+        
+    width: 8px;
+    height: 80px;
+    background-color: rgb(0,0,0,0.5); 
+
+    
+}
+.floor{
+    width: 70%;
+    height: 1px;
+    background-color: rgb(0,0,0,0.5);
+    box-shadow: 0 0 10px 1px #a5682a;
+
+
+}
+.mover{
+    position:fixed;
+    right: 20%;
+    top: 20%;
+} 
+.botons{
+    background-color: transparent;
+    width: 250px;
+    height: 450px;
+    position:fixed;
+    right: inherit;
+    left: 79%;
+}
+.ama{
+    background-color: rgb(47, 255, 0);
+    width: 45%;
+    height: 40px;
+    border-radius: 10px;
+    border-color: rgb(232, 255, 147);
+    
+}
+.ama:hover{
+    background-color: rgba(140, 252, 115, 0.756);
+
+}
+.roj{
+    background-color: rgb(212, 255, 0);
+    width: 45%;
+    height: 40px;
+    border-radius: 10px;
+    border-color: rgb(255, 136, 136);
+    
+}
+.roj:hover{
+    background-color: rgba(231, 255, 136, 0.893)
+
+}
+.ver{
+    
+    background-color: rgb(43, 255, 0);
+    width: 40%;
+    height: 30px;
+    border-radius: 10px;
+    border-color: rgb(164, 255, 136);
+    
+}
+.ver:hover{
+    background-color: rgb(164, 255, 136);
+
+}
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+
+@media (max-width:930px) {
+    
+    
+    .grid-container{
+        min-width: 375px;
+        
+        grid-column:1/-1;
+        grid-template-areas: 
+        "header"
+        "info"
+        "cmaforo";
+    }
+    .cmaforo{
+        max-height: 250px;
+        width: 97%;
+        height: 1300%;
+    }
+    .semaforo{
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        display: grid;
+        place-items: center;
+        background-color: #2c3e50;
+        padding: 10px;
+    }
+    .mover{
+        left: 30%;
+        right: inherit;
+        top: 56%;
+    }
+    .botons{
+        background-color: transparent;
+        width: 250px;
+        height: 450px;
+        position:fixed;
+        right: inherit;
+        left: 40%;
+    }
+}

@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    position:relative;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    font-size: 30px;
+    top: 15%;
+    
+}

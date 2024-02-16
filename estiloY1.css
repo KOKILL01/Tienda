@@ -1,0 +1,79 @@
+body{
+    background-color: rgb(234, 234, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+    *{
+    font-family: "Lato", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-family: "PT Sans", sans-serif;
+        box-sizing:border-box;
+}
+form{
+    width: 600px;
+    border:2px solid black;
+    border: none;
+    padding: 6rem;
+    background-color:rgb(98, 166, 230);
+    
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+}
+h1{
+    display: block;
+    border:2px solid black;
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+label{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 300;
+}
+input{
+    display: block;
+    border: 2px solid black;
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+button1{
+    float:right;
+    background-color: aqua;
+    padding: .5rem;
+    color: rgb(255, 255, 255);
+    border: none;
+    width: 40%;
+    border-radius:5px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+button:hover{
+    background-color: aliceblue;
+    color: black;
+}
+a{
+    float:left;
+    margin-left: 10px;
+    padding: .5rem;
+    text-decoration: none;
+}
+a:hover{
+    background-color: aliceblue;
+    color: black;
+}
+.error{
+    background-color: red;
+    color: black;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+}
